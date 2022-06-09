@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Formulario Colearning</title>
 </head>
-<body>
-    <h1>Hello World</h1>
+
+<body class="bg-dark text-light">
+    <div class="container">
+        <div class="text-center p-3">
+            <h1>Heladeria <!-- Ponga su nombre a la derecha-->Moschini's</h2>
+        </div>
+    <div class="fw-bold fst-italic text-center text-info mb-5">
+        <h6>"Un mondo di sapori in la sua bocca"</h6>
+    </div>
+    <form id="heladeria">
+        <div class="tamaños">
+            <p><u>Seleccione el tamaño de su pote:</u>  </p>
+            <div class="p-1">
+            <input type="radio" name="tamaño" id="vasito" value="vasito $150"><label class="me-5" for="vasito" >Vasito $150</label>
+            <input type="radio" name="tamaño" id="1/4" value="1/4kg $280"><label class="me-5" for="1/4" >Pote 1/4 $280</label>
+            <input type="radio" name="tamaño" id="1/2" value="1/2kg $500"><label class="me-5" for="1/2" >Pote 1/2 $500</label>
+            <input type="radio" name="tamaño" id="kilo" value="1kg $960"><label class="me-5" for="kilo" >Pote 1kg $960</label>
+        </div>
+        </div>
+        <div id="sabores">
+            <select id="sabor1" name="sabor1" class="form-select" form="heladeria" aria-label="Default select example">
+                <option selected>Selecciona un sabor...</option>
+                <option value="dulceDeLeche">Dulce de leche Granizado</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="frutilla">Frutilla</option>
+                <option value="sambayon">Sambayon</option>
+                <option value="frutosRojos">Frutos Rojos</option>
+                <option value="cookieAndCream">Cookie and Cream</option>
+                <option value="mentaGranizada">Menta Granizada</option>
+            </select>
+            <br>
+        </div>
+        <div class="d-flex flex-row-reverse">
+
+            <input type="submit" id="heladeriaSubmit" class="btn btn-info my-3 ms-3" value="Confirmar" title="¿Ya armaste tu pedido? Envialo!" onsubmit="confirmarPedido(e)">
+            <button type="button" class="btn btn-success my-3" title="Clic si quieres agregar otro sabor" onclick="agregarSabor()">Agregar Sabor</button>
+        </div>
+    </form>
+    <div id="pedido"></div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
