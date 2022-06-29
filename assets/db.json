@@ -1,0 +1,78 @@
+{
+  "pokemons": [
+    {
+      "name": "Miau",
+      "type": "normal",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Ivysaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Venusaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Charmander",
+      "type": [
+        "Fire"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Charmeleon",
+      "type": [
+        "Fire"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Charizard",
+      "type": [
+        "Fire",
+        "Flying"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Squirtle",
+      "type": [
+        "Water"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Wartortle",
+      "type": [
+        "Water"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Blastoise",
+      "type": [
+        "Water"
+      ]
+    },
+    {
+      "name": "Pikachu",
+      "type": "trueno",
+      "id": 11
+    },
+    {
+      "name": "Mew",
+      "type": "Psiquico",
+      "id": 12
+    }
+  ]
+}
